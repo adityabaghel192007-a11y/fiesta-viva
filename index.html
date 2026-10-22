@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiesta Viva — Explore the Hispanic World</title>
+  <meta name="description" content="Fiesta Viva: an educational student project exploring Spanish and Hispanic festivals, their food, music and dance, with an interactive Spanish quiz.">
+  <meta name="theme-color" content="#6E1A2A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts (optional): if they fail to load, the CSS falls back to Georgia / system fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ A. NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Fiesta Viva, back to top">
+        <span class="brand-mark" aria-hidden="true">FV</span>
+        <span class="brand-name">Fiesta Viva</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#festivals">Festivals</a></li>
+        <li><a href="#cuisine">Cuisine</a></li>
+        <li><a href="#music">Music &amp; Dance</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#quiz">Spanish Quiz</a></li>
+        <li><a href="#team">Our Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ B. HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Cultura · Gastronomía · Música</p>
+          <p class="hero-brand">Fiesta Viva</p>
+          <h1 id="hero-title">Discover the Spirit of Spanish Festivals</h1>
+          <p class="hero-tagline" lang="es">Tradición, sabor y ritmo.</p>
+          <p class="hero-tagline-en">Tradition, flavour and rhythm.</p>
+          <p class="hero-intro">
+            A <span lang="es"><em>fiesta</em></span> is never just a party. Each one carries a town's history, its favourite
+            dishes, its music and the people who keep it alive year after year. Explore four famous celebrations —
+            three from Spain and one from Mexico — and test your Spanish along the way.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#festivals">Explore Festivals</a>
+            <a class="btn btn-secondary" href="#quiz">Take the Spanish Quiz</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/illustrations/hero.svg" width="520" height="640"
+               alt="Poster-style collage: a Spanish guitar in front of a golden sun, surrounded by cut-paper flags, tomatoes, marigolds and flames">
+          <figcaption>Original illustration created for this project.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container pillars" aria-label="Three themes of this site">
+        <a class="pillar pillar-tradicion" href="#festivals">
+          <span class="pillar-es" lang="es">Tradición</span>
+          <span class="pillar-en">Where festivals come from and why they matter</span>
+        </a>
+        <a class="pillar pillar-sabor" href="#cuisine">
+          <span class="pillar-es" lang="es">Sabor</span>
+          <span class="pillar-en">The dishes people share when they celebrate</span>
+        </a>
+        <a class="pillar pillar-ritmo" href="#music">
+          <span class="pillar-es" lang="es">Ritmo</span>
+          <span class="pillar-en">The music and dance that bring crowds together</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ C. FESTIVALS (Aditya Baghel) ============ -->
+    <section class="section" id="festivals" aria-labelledby="festivals-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span lang="es">Las fiestas</span> · The festivals</p>
+          <h2 id="festivals-title">Four celebrations, four stories</h2>
+          <p class="section-lead">
+            La Tomatina, Las Fallas and San Fermín are <strong>Spanish</strong> festivals. Día de los Muertos is a
+            <strong>Mexican</strong> tradition: it belongs to the wider Spanish-speaking (Hispanic) world, not to Spain.
+            Each card shows where and when the festival happens; select <em>Learn more</em> for its history, traditions, food and music.
+          </p>
+          <button class="byline" type="button" data-open-member="aditya">
+            Researched and written by <strong>Aditya Baghel</strong> · 25BAI1628
+          </button>
+        </header>
+        <div class="festival-grid" id="festival-grid">
+          <p class="noscript-note">Festival cards need JavaScript to display.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. CUISINE (Pranshu Suresh Gupta) ============ -->
+    <section class="section section-tinted" id="cuisine" aria-labelledby="cuisine-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span lang="es">Sabores de fiesta</span> · Festival flavours</p>
+          <h2 id="cuisine-title">Food is how a celebration is shared</h2>
+          <p class="section-lead">
+            Long tables, big pans and street stalls turn a festival into a meal for the whole neighbourhood.
+            Some dishes below are <strong>documented festival foods</strong>; others are <strong>everyday Spanish cuisine</strong>
+            that simply appears at many gatherings. Each card is labelled so the difference stays clear.
+          </p>
+          <ul class="legend" aria-label="Label meanings">
+            <li><span class="tag tag-festival">Festival food</span> documented link to a specific festival</li>
+            <li><span class="tag tag-regional">Regional dish</span> typical of one region, eaten all year</li>
+            <li><span class="tag tag-everyday">Everyday</span> general Spanish food culture</li>
+          </ul>
+          <button class="byline" type="button" data-open-member="pranshu">
+            Researched and written by <strong>Pranshu Suresh Gupta</strong> · 25BAI1620
+          </button>
+        </header>
+        <div class="dish-grid" id="dish-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ E. MUSIC & DANCE (Shreyam Manna) ============ -->
+    <section class="section" id="music" aria-labelledby="music-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span lang="es">El ritmo de la fiesta</span> · The rhythm of the festival</p>
+          <h2 id="music-title">Music and dance: everyone takes part</h2>
+          <p class="section-lead">
+            Rhythm, costume and collective participation turn a crowd into a community. Spain's festival soundscape is
+            varied: <strong>flamenco is strongly Andalusian</strong>, while Valencia marches to brass bands, Aragón dances the
+            jota and Pamplona follows its pipers and street bands.
+          </p>
+          <button class="byline" type="button" data-open-member="shreyam">
+            Researched and written by <strong>Shreyam Manna</strong> · 25BAI1343
+          </button>
+        </header>
+
+        <div class="music-grid" id="music-grid"></div>
+
+        <!-- Media area: rhythm generated in the browser (no recordings, no autoplay) -->
+        <section class="compas" aria-labelledby="compas-title">
+          <div class="compas-text">
+            <p class="eyebrow">Interactive media · <span lang="es">el compás</span></p>
+            <h3 id="compas-title">Hear a 12-beat flamenco cycle</h3>
+            <p>
+              Styles such as <span lang="es">soleá</span> count twelve beats, with accents on
+              <strong>3, 6, 8, 10 and 12</strong>. Press play and try clapping (<span lang="es">palmas</span>) on the
+              highlighted accents. The sound is synthesised in your browser — it is a counting aid, not a recording of a performance.
+            </p>
+            <div class="compas-controls">
+              <button class="btn btn-primary" type="button" id="compas-play" aria-pressed="false">Play rhythm</button>
+              <label class="slider-label" for="compas-tempo">Tempo: <output id="compas-tempo-value" for="compas-tempo">120</output> beats per minute</label>
+              <input type="range" id="compas-tempo" min="60" max="200" step="5" value="120">
+            </div>
+            <p class="compas-status" id="compas-status" role="status"></p>
+          </div>
+          <ol class="compas-beats" id="compas-beats" aria-label="Twelve beats of the compás; accented beats are marked"></ol>
+        </section>
+      </div>
+    </section>
+
+    <!-- ============ F. FESTIVAL EXPLORER (Anay Parth) ============ -->
+    <section class="section section-dark" id="explore" aria-labelledby="explore-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span lang="es">Explorador de fiestas</span> · Festival explorer</p>
+          <h2 id="explore-title">Filter, explore and compare</h2>
+          <p class="section-lead">
+            Seven celebrations from Spain, Mexico and Colombia. Filter by country, region and theme, pick a festival
+            to see its details, or compare two side by side. All information comes from the same research shown above.
+          </p>
+          <button class="byline byline-light" type="button" data-open-member="anay">
+            Built and researched by <strong>Anay Parth</strong> · 25BAI1273
+          </button>
+        </header>
+
+        <form class="explorer-filters" id="explorer-filters" aria-label="Festival filters">
+          <div class="field">
+            <label for="filter-country">Country <span lang="es">(país)</span></label>
+            <select id="filter-country"></select>
+          </div>
+          <div class="field">
+            <label for="filter-region">Region <span lang="es">(región)</span></label>
+            <select id="filter-region"></select>
+          </div>
+          <fieldset class="field chips">
+            <legend>Theme <span lang="es">(tema)</span></legend>
+            <div class="chip-row" id="filter-category"></div>
+          </fieldset>
+          <button class="btn btn-ghost" type="reset" id="filter-reset">Reset filters</button>
+        </form>
+
+        <div class="calendar" aria-labelledby="calendar-title">
+          <h3 class="calendar-title" id="calendar-title">When do they happen? <span lang="es">(el calendario)</span></h3>
+          <div class="calendar-grid" id="calendar-grid"></div>
+          <p class="calendar-note">Shaded months show when each festival usually takes place. Dates for La Tomatina, the Feria de Abril and the Carnaval move each year.</p>
+        </div>
+
+        <div class="explorer-layout">
+          <div>
+            <p class="result-count" id="explorer-count" role="status" aria-live="polite"></p>
+            <ul class="explorer-list" id="explorer-list"></ul>
+          </div>
+          <article class="explorer-detail" id="explorer-detail" aria-live="polite" tabindex="-1">
+            <p class="muted">Select a festival from the list to see its details here.</p>
+          </article>
+        </div>
+
+        <section class="compare" aria-labelledby="compare-title">
+          <h3 id="compare-title">Compare two festivals <span lang="es">(comparar)</span></h3>
+          <form class="compare-form" id="compare-form">
+            <div class="field">
+              <label for="compare-a">First festival</label>
+              <select id="compare-a"></select>
+            </div>
+            <span class="compare-vs" aria-hidden="true">vs</span>
+            <div class="field">
+              <label for="compare-b">Second festival</label>
+              <select id="compare-b"></select>
+            </div>
+            <button class="btn btn-primary" type="submit">Compare</button>
+          </form>
+          <p class="form-error" id="compare-error" role="alert"></p>
+          <div class="compare-output" id="compare-output"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ============ G. QUIZ (Aritra Biswas) ============ -->
+    <section class="section" id="quiz" aria-labelledby="quiz-title">
+      <div class="container quiz-container">
+        <header class="section-head center">
+          <p class="eyebrow">Spanish quiz · <span lang="es">desafío</span></p>
+          <h2 id="quiz-title" lang="es">¡Pon a prueba tu español!</h2>
+          <p class="section-lead">Put your Spanish to the test: festivals, food, music and vocabulary.</p>
+          <button class="byline" type="button" data-open-member="aritra">
+            Designed and built by <strong>Aritra Biswas</strong> · 25BAI1460
+          </button>
+        </header>
+
+        <div class="quiz-card" id="quiz-app">
+          <!-- Start screen -->
+          <div class="quiz-screen" id="quiz-start">
+            <h3>How it works</h3>
+            <ul class="quiz-rules">
+              <li><span id="quiz-total-label">20</span> multiple-choice questions, shuffled for every attempt.</li>
+              <li>Four options each — only one is correct.</li>
+              <li>After each answer you will see the correct option and a short explanation.</li>
+              <li>Keyboard: <kbd>Tab</kbd> to move, <kbd>Enter</kbd> to choose, or press <kbd>1</kbd>–<kbd>4</kbd>.</li>
+            </ul>
+            <button class="btn btn-primary" type="button" id="quiz-start-btn">Start the quiz <span lang="es">· ¡Vamos!</span></button>
+          </div>
+
+          <!-- Question screen -->
+          <div class="quiz-screen" id="quiz-question" hidden>
+            <div class="quiz-meta">
+              <span id="quiz-progress-text">Question 1 of 20</span>
+              <span>Score: <strong id="quiz-score">0</strong></span>
+            </div>
+            <div class="progress" role="progressbar" id="quiz-progress" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0">
+              <div class="progress-bar" id="quiz-progress-bar"></div>
+            </div>
+            <p class="quiz-topic" id="quiz-topic"></p>
+            <h3 class="quiz-q" id="quiz-q-text" tabindex="-1"></h3>
+            <div class="quiz-options" id="quiz-options" role="group" aria-labelledby="quiz-q-text"></div>
+            <div class="quiz-feedback" id="quiz-feedback" role="status" aria-live="polite"></div>
+            <button class="btn btn-primary" type="button" id="quiz-next" hidden>Next question</button>
+          </div>
+
+          <!-- Results screen -->
+          <div class="quiz-screen" id="quiz-results" hidden>
+            <h3 tabindex="-1" id="quiz-results-title">Your results <span lang="es">· Resultados</span></h3>
+            <p class="quiz-final-score" id="quiz-final-score"></p>
+            <p class="quiz-final-msg" id="quiz-final-msg"></p>
+            <div id="quiz-review"></div>
+            <button class="btn btn-primary" type="button" id="quiz-restart">Restart quiz <span lang="es">· Otra vez</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ H. VOCABULARY (Aritra Biswas) ============ -->
+    <section class="section section-tinted" id="vocab" aria-labelledby="vocab-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Vocabulary · <span lang="es">vocabulario</span></p>
+          <h2 id="vocab-title"><span lang="es">Palabras para celebrar</span> <span class="h-sub">Words to celebrate with</span></h2>
+          <p class="section-lead">Search in Spanish or English, filter by topic, and switch to flashcards to test your memory.</p>
+        </header>
+
+        <form class="vocab-controls" id="vocab-controls" role="search" aria-label="Search vocabulary">
+          <div class="field grow">
+            <label for="vocab-search">Search Spanish or English</label>
+            <input type="search" id="vocab-search" placeholder="e.g. fuego or rhythm" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="vocab-category">Category</label>
+            <select id="vocab-category"></select>
+          </div>
+          <div class="field">
+            <span class="field-label" id="vocab-mode-label">Mode</span>
+            <button class="btn btn-ghost-dark" type="button" id="vocab-mode" aria-pressed="false" aria-describedby="vocab-mode-label">Flashcard mode: off</button>
+          </div>
+        </form>
+        <p class="result-count" id="vocab-count" role="status" aria-live="polite"></p>
+        <p class="muted small" id="vocab-speech-note"></p>
+        <ul class="vocab-grid" id="vocab-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ I. TEAM ============ -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span lang="es">Nuestro equipo</span> · Our team</p>
+          <h2 id="team-title">Five students, five contributions</h2>
+          <p class="section-lead">
+            Select a team member to see what they researched, their original text, a Spanish vocabulary check for their
+            section and an explanation of the code they own.
+          </p>
+          <p class="notice" role="note">
+            <strong>Honesty note:</strong> the reflection paragraphs are <em>drafts</em>. Text in [square brackets] marks
+            places where each student must add their own thoughts. Every student should personalise their reflection in
+            <code>js/data.js</code> before submission. None of us claims to have attended these festivals.
+          </p>
+        </header>
+        <div class="team-grid" id="team-grid" role="group" aria-label="Team members"></div>
+        <div class="team-panel" id="team-panel" tabindex="-1" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ J. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Fiesta Viva</p>
+        <p class="footer-signoff" lang="es">¡Gracias por explorar con nosotros!</p>
+        <p class="muted-light">Thank you for exploring with us.</p>
+        <p class="footer-note">
+          An educational student project for the assignment <em>“Creative Exploration of the Hispanic World.”</em>
+          All text is our own; all illustrations are original SVG artwork made for this project.
+        </p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-h">Navigate</h2>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#festivals">Festivals</a></li>
+          <li><a href="#cuisine">Cuisine</a></li>
+          <li><a href="#music">Music &amp; Dance</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#quiz">Spanish Quiz</a></li>
+          <li><a href="#vocab">Vocabulary</a></li>
+          <li><a href="#team">Our Team</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-h">Team <span lang="es">(equipo)</span></h2>
+        <ul class="footer-team" id="footer-team"></ul>
+      </div>
+    </div>
+    <div class="container sources" id="sources">
+      <h2 class="footer-h">Sources &amp; further reading <span lang="es">(fuentes)</span></h2>
+      <p class="muted-light small">We paraphrased these sources in our own words. Where sources disagree or a detail is not documented, our text says so.</p>
+      <ol class="sources-list" id="sources-list"></ol>
+    </div>
+    <div class="container footer-bottom">
+      <p>Fiesta Viva · <span lang="es">Tradición, sabor y ritmo</span> · <a href="#home">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <!-- Festival "Learn more" dialog (filled by script.js) -->
+  <dialog class="festival-dialog" id="festival-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" id="dialog-close" aria-label="Close festival details">×</button>
+      <div id="dialog-content"></div>
+    </div>
+  </dialog>
+
+  <!-- Scripts: data first, then each feature, then the main script -->
+  <script src="js/data.js" defer></script>
+  <script src="js/helpers.js" defer></script>
+  <script src="js/explorer.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/vocabulary.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
