@@ -11,7 +11,7 @@ contribution page for each of the five team members.
 
 | Team member | Reg. no. | Owns |
 |---|---|---|
-| Aditya Baghel | 25BAI1628 | Festivals: origins, traditions, history · “Learn more” dialog |
+| Aditya Baghel | 25BAI1628 | Festivals: origins, traditions history · “Learn more” dialog |
 | Pranshu Suresh Gupta | 25BAI1620 | Festival cuisine · dish cards with festival/everyday labels |
 | Shreyam Manna | 25BAI1343 | Music & dance · interactive compás (rhythm) player |
 | Anay Parth | 25BAI1273 | Festival explorer · filters, calendar, details, comparison |
